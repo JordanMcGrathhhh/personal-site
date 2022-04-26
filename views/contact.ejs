@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>Jordan McGrath - Contact</title>
+    <link rel="stylesheet" href="contact-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/84c225f813.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contact-container">
+        <a href="/"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
+        <h1>I'm excited to meet you!</h1>
+        <form class="contact-form" action="/create-contact" method="POST">
+            <div class="contact-name">
+                <input required type="text" name="fname" id="fname" placeholder="First Name">
+                <input type="text" name="lname" id="lname" placeholder="Last Name">
+            </div>
+    
+            <div class="contact-media">
+                <input required type="email" name="email" id="email" placeholder="you@example.com">
+                <input required type="tel" name="tel" id="tel" placeholder="(123)-456-7890">
+            </div>
+    
+            <h3>What's on your mind?</h3>
+            <textarea name="text" id="text"></textarea>
+    
+            <input class="contact-submit" type="submit">
+        </form>
+    </div>
+    <footer class="footer segment">
+        <h5>Thanks for having a look around!</h5>
+        <h6>Let's stay in touch.</h6>
+        <div class="socials">
+            <a href="https://github.com/JordanMcGrathhhh"><i class="fa-brands fa-github social"></i></a>
+            <a href="https://www.linkedin.com/in/jordan-mcgrath-2869921ab/"><i class="fa-brands fa-linkedin-in social"></i></a>
+            <a href="mailto:test@test.com"><i class="fa-solid fa-envelope social"></i></a>
+        </div>
+        <p>this site is powered by express.js and me!</p>
+    </footer>
+</body>

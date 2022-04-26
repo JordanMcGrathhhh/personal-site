@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Jordan McGrath - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/84c225f813.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img class="responsive-img-circle" src="https://avatars.githubusercontent.com/u/37979934?v=4">
+        </div>
+        <div class="profile-bio">
+            <h1>Hey, I'm <span style="color: #7EBDC2;">Jordan!</span></h1>
+            <p>I'm a <span style="color: #7EBDC2;">Freelance Web Developer</span> from Pennsylvania.</p>
+            <a href="/contact" class="contact-button">Contact Me!</a>
+        </div>
+    </div>
+    <div class="content-container segment">
+        <h3 class="content-header">Check out some of my recent content!</h3>
+        <a class="see-all-link" href="/blog">
+            <i class="fa-solid fa-angles-right see-all-link"></i>
+        </a>
+        
+        <div class="content-post-holder">
+            <% for(post of posts) { %>
+                <div class="content-post">
+                    <div class="content-post-img">
+                        <img class="responsive-img" src="https://media.istockphoto.com/vectors/programming-writing-code-laptop-vector-id1272474229">
+                    </div>
+                    <div class="content-post-text">
+                        <div class="content-post-info">
+                            <p class="content-post-topic">Tech</p>
+                            <p class="content-post-date"><%= post.createdAt.toLocaleDateString() %></p>
+                        </div>
+                        <h4 class="content-post-title"><%= post.title %></h4>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        
+    </div>
+    <div class="about-container segment">
+        <h3>Why me though?</h3>
+        <hr class="hr">
+        <div class="about-left">
+            <p>A lot more than strong coffee and a good mechanical keyboard goes into making
+            a professional website/ web app. It takes a lot of planning, it needs to be
+            structured and though out. I enjoy working with my clients, bringing their
+            visions to life, and maintaining a creative and fun, yet professional,
+            relationship.</p>
+        </div>
+        <div class="about-right">
+            <p>I'm a very hands-on learner. Simply put, I learn by doing and I'm not afraid
+            to tackle things I'm inexperienced at. Over time, this has equated to becoming 
+            comfortable with a multitude of languages, programming techniques, and security 
+            practices.
+            </p>
+        </div>
+        <hr class="hr">
+    </div>
+    <footer class="footer segment">
+        <h5>Thanks for having a look around!</h5>
+        <h6>Let's stay in touch.</h6>
+        <div class="socials">
+            <a href="https://github.com/JordanMcGrathhhh"><i class="fa-brands fa-github social"></i></a>
+            <a href="https://www.linkedin.com/in/jordan-mcgrath-2869921ab/"><i class="fa-brands fa-linkedin-in social"></i></a>
+            <a href="mailto:test@test.com"><i class="fa-solid fa-envelope social"></i></a>
+        </div>
+        <p>this site is powered by express.js and me!</p>
+    </footer>
+</body>
